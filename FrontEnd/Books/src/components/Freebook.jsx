@@ -13,7 +13,7 @@ function Freebook() {
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get(`${process.env.BACKEND_URL}/book`);     
+        const res = await axios.get(`${import.meta.env.VITE_Backend_URL}/book`);     
 
         const data = res.data.filter((data) => data.category === "Free");
         console.log(data);

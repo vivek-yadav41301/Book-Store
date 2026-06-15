@@ -17,7 +17,7 @@ function Login() {
       password: data.password,
     };
     await axios
-      .post(  `${process.env.BACKEND_URL}/user/login`, userInfo)
+      .post(  `${import.meta.env.VITE_Backend_URL}/user/login`, userInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {
