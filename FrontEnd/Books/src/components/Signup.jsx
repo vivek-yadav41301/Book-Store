@@ -4,7 +4,7 @@ import Login from "./Login";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import toast from "react-hot-toast";
-
+import.meta.env.VITE_BACKEND_URL
 function Signup() {
   const location = useLocation();
   const navigate = useNavigate();

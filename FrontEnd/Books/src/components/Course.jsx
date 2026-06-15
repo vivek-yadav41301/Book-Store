@@ -3,7 +3,7 @@ import Cards from "./Cards";
 import list from "../assets/list.json";
 import { Link } from "react-router-dom";
 import axios from "axios";
-
+import.meta.env.VITE_BACKEND_URL
 function Course() {
    const [book, setBook] = useState([]);
   useEffect(() => {

@@ -7,7 +7,7 @@ const Slider = Slick.default || Slick;
 import axios from "axios";
 import Cards from "./Cards";
 import { useState, useEffect } from "react";
-
+import.meta.env.VITE_BACKEND_URL
 function Freebook() {
    const [book, setBook] = useState([]);
   useEffect(() => {
